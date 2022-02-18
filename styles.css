@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #c2c1c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main {
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: rgb(5, 228, 24);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.div-main ul {
+    position: relative;
+    display: flex;
+}
+
+.div-main ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.div-main ul li a {
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.div-main ul li a i {
+    color: #080000;
+    font-size: 38px;
+    position: absolute;
+}
+
+.activeIcon {
+    opacity: 0;
+    transition: all 0.6s ease;
+    transition-delay: 0.4;
+}
+
+.div-main ul li.active-list a i {
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    bottom: -19px;
+    left: 34px;
+    width: 25px;
+    height: 36px;
+    background: #c2c1c1;
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
